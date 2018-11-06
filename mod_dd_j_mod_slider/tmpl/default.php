@@ -10,8 +10,7 @@ JHtml::_('jquery.framework');
 JHtml::_('script', 'mod_dd_j_mod_slider/article_slides.js', array('version' => 'auto', 'relative' => true));
 JHtml::_('stylesheet', 'mod_dd_j_mod_slider/article_slides.css', array('version' => 'auto', 'relative' => true));
 JHtml::_('stylesheet', 'mod_dd_j_mod_slider/style.css', array('version' => 'auto', 'relative' => true));
-$slides = $params->get('dd_article_slides_fields');
-$class_sfx = htmlspecialchars($params->get('moduleclass_sfx'));
+
 $html = '<div id="dd_article_slides" class="'.$class_sfx.'">';
 $i = 0;
 if(count( (array)$slides ) > 0){
