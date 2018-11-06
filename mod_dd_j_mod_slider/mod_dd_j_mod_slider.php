@@ -12,5 +12,6 @@ require_once __DIR__ . '/helper.php';
 
 
 $class_sfx = htmlspecialchars($params->get('class_sfx'));
+$slides = $params->get('dd_article_slides_fields');
 
 require(JModuleHelper::getLayoutPath('mod_dd_j_mod_slider', $params->get('layout', 'default')));
