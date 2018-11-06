@@ -1,24 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
-/**
- * @copyright	Copyright (c) 2018 dd_j_mod_slider. All rights reserved.
- * @license		http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
- */
--->
 <extension type="module" version="3.0" client="site" method="upgrade">
-	<name>DD slider</name>
+	<name>mod_dd_j_mod_slider</name>
 	<author>Ankita Singh</author>
 	<creationDate>November 2018</creationDate>
-	<copyright>Copyright (c) 2018 dd_j_mod_slider. All rights reserved.</copyright>
-	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
-	<authorEmail></authorEmail>
-	<authorUrl></authorUrl>
+	<copyright>Copyright (c) 2018 Open Source Matters. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>ankitasingh2a@gmail.com</authorEmail>
+	<authorUrl>https://github.com/ankitasingh2a/DD_J_mod_slider</authorUrl>
 	<version>1.0.0</version>
-	<description>
-	<![CDATA[
-	<p>A module to display images as slider.<p>
-	]]>
-	</description>
+	<description>MOD_DD_J_MOD_SLIDER_XML_DESCRIPTION</description>
 
 	<files>
 		<filename module="mod_dd_j_mod_slider">mod_dd_j_mod_slider.php</filename>
