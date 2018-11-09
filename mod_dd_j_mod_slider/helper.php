@@ -20,7 +20,7 @@ class modDD_J_mod_sliderHelper {
 	 *
 	 * @return  mixed
 	 */
-	public static function &getSlides()
+	public static function &getSlides($params)
 	{
 		$html = '';
 		$i = 0;
