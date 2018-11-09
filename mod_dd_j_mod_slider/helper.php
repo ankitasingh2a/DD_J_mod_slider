@@ -15,4 +15,38 @@ defined('_JEXEC') or die;
  */
 class modDD_J_mod_sliderHelper {
 	
+	/**
+	 * Retrieve list of slides	 
+	 *
+	 * @return  mixed
+	 */
+	public static function &getSlides()
+	{
+		$html = '';
+		$i = 0;
+		$slides = $params->get('dd_article_slides_fields');
+		if(count( (array)$slides ) > 0)
+		{
+			foreach ($slides as $slide)
+			{
+				$i++;
+				$html .= '<div id="dd_article_slides_fields' . $i . '" class="article_slide">';
+				$html .=    '<div class="article_slide_inner">';
+				$html .=        '<img src="' . $slide->image . '" alt="'. $slide->image_alt .'">';
+				$html .=        '<div class="article_slide_info">';
+				$html .=            '<p>' . $slide->image_desc .'</p>';
+				$html .=            '<small>Bild: '. $slide->image_source . '</small>';
+				$html .=        '</div>';
+				$html .=        '<button class="article_slide_info_toggle">';
+				$html .=            '<span class="icon-dd-arrow-up"></span>';
+				$html .=            '<span class="icon-dd-arrow-down"></span>';
+				$html .=        '</button>';
+				$html .=    '</div>';
+				$html .= '</div>';
+			}
+	      }
+	      return $html;
+	  }
+		
+	
 }
